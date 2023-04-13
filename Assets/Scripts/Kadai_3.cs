@@ -29,11 +29,7 @@ public class Kadai_3 : MonoBehaviour
         // 確認のため、文字列を表示する.
         Debug.Log("あなたは" + randomSaikoro_Player.ToString() + "の目を出した.ライバルは" + randomSaikoro_Enemy.ToString() + "の目を出した");
 
-        string[] resultStrings = new string[3];
-        resultStrings[0] = "あなたの勝ち";
-        resultStrings[1] = "あなたの負け";
-        resultStrings[2] = "引き分け";
-
+        ///////////////////////////////// 課題 //////////////////////////////////////////////////
         // あなたの目の方が大きかったら、あなたの勝ちと表示してください.
         // あなたの目の方が小さかったら、あなたの負けと表示してください.
         // 同じ目だったら、引き分けと表示してください.
