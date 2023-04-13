@@ -6,6 +6,11 @@ public class Kadai_5 : MonoBehaviour
 {
     void Start()
     {
+        Reroll();
+    }
+
+    public void Reroll()
+    {
         // 文字列（String）を格納するための、string型の変数を宣言する.
         // 型名の後ろに[]を付けると、「配列」を宣言していることになります.
         // 配列は、値を格納するための変数が、複数個存在している場合に活用します.
@@ -37,6 +42,8 @@ public class Kadai_5 : MonoBehaviour
         Debug.Log("ホロライブ３期生の皆さんのサイコロの目は次の通りです.");
         for (int i = 0; i < 4; i++)
         {
+            JJC.SetTalentName(i, talentName[i]);
+            JJC.SetSaikoro(i, talentSaikoro[i]);
             Debug.Log(talentName[i] + "さんのサイコロの目は" + talentSaikoro[i].ToString());
         }
 
